@@ -113,7 +113,7 @@ db.ref("/turn/").on("value", function(snapshot) {
       $(".show").addClass("borderW");
       $(".showT").addClass("border border-dark");
       $(".showT").removeClass("borderT");
-			$("#players").html("Waiting on " + player1Name + " to choose...");
+			$("#players").html("<i>Waiting on " + player1Name + " to choose...</i>");
 		}
 	} else if (snapshot.val() === 2) {
 		console.log("TURN 2");
@@ -123,7 +123,7 @@ db.ref("/turn/").on("value", function(snapshot) {
 		  $(".show").removeClass("borderW");
       $(".showT").removeClass("border border-dark");
       $(".showT").addClass("borderT");
-			$("#players").html("Waiting on " + player2Name + " to choose...");
+			$("#players").html("<i>Waiting on " + player2Name + " to choose...</i>");
 		}
 	}
 });
@@ -154,7 +154,7 @@ $("#enter").on("click", function(event) {
         $("#name").hide();
         $("#enter").hide();
         $("#oRock").show();
-        $(".intro").prepend("<h5>Hello " + thisPlayer + ", you are player 1!</h5>");
+        $(".intro").prepend("<br><h5>Hello " + thisPlayer + ", you are player 1!</h5>");
       } else if( (player1 !== null) && (player2 === null) ) {
         console.log("Adding Player 2");
         thisPlayer = $("#name").val().trim();
@@ -170,7 +170,7 @@ $("#enter").on("click", function(event) {
         $("#name").hide();
         $("#enter").hide();
         $("#tRock").show();
-        $(".intro").prepend("<h5>Hello " + thisPlayer + ", you are player 2!</h5>");
+        $(".intro").prepend("<br><h5>Hello " + thisPlayer + ", you are player 2!</h5>");
         
       }
     }

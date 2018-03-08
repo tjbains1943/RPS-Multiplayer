@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Rock, Paper, Scissors</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<h1 class="bg-success text-center mb-5">Rock, Paper, Scissors</h1>
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12 text-center mb-4 intro backColor">
+            <h5 class="mb-5" id="players"></h5>
+            <input type="text" id="name" placeholder="Name">
+            <button class="btn btn-success" id="enter">Enter</button>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-md-3 offset-md-1 mr-5 boxes text-center">
+            <div class="bg-white border border-dark pizza show">
+                <h5 id="oneLine">Waiting For Player 1</h5>
+                <section id="oRock">
+                    <button class="btn btn-block btn-warning">Rock</button>
+                    <button class="btn btn-block btn-warning">Paper</button>
+                    <button class="btn btn-block btn-warning">Scissors</button>
+                </section>
+                <h5 id="winsO"></h5>
+            </div>
+        </div>
+        <div class="col-md-3 mr-5">
+            <div class="border border-dark pizza roundOutcome"></div>
+
+        </div>
+        <div class="col-md-3 mr-5 text-center">
+            <div class="bg-white border border-dark pizza showT">
+                <h5 id="twoLine">Waiting For Player 2</h5>
+                <section id="tRock">
+                    <button class="btn btn-block btn-info">Rock</button>
+                    <button class="btn btn-block btn-info">Paper</button>
+                    <button class="btn btn-block btn-info">Scissors</button>
+                </section>
+                <h5 id="winsT"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="row offset-md-2">
+        <div class="col-md-9">
+            <div class="border border-dark boxed pt-0" id="textArea"></div>
+            <input type="text" size="75" id="talk">
+            <button type="button" class="btn btn-info" id="submit">Submit</button>
+        </div>
+    </div>
+</div>
+
+<body>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/main.js"></script>
+
+</body>
+
+</html>
